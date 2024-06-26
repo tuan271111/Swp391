@@ -12,6 +12,7 @@
             <h1>Tropical Hotel</h1>
             <nav>
                 <ul>
+<li><a href="index.jsp">Home</a></li>
                     <li><a href="index.jsp">Home</a></li>
                     <li><a href="rooms.jsp">Rooms</a></li>
                     <li><a href="amenities.jsp">Amenities</a></li>
