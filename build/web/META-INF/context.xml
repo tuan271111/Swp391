@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <Context path="/login"/>
+=======
+<Context path="/lo"/>
+>>>>>>> f73e52c4162f9b78ab34ee8d738dcdf29cafa397

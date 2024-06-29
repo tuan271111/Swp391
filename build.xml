@@ -7,8 +7,13 @@
 <!-- the Compile on Save feature is turned off for the project. -->
 <!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
 <!-- in the project's Project Properties dialog box.-->
+<<<<<<< HEAD
 <project name="DangNhap" default="default" basedir=".">
     <description>Builds, tests, and runs the project DangNhap.</description>
+=======
+<project name="Loginn" default="default" basedir=".">
+    <description>Builds, tests, and runs the project Loginn.</description>
+>>>>>>> f73e52c4162f9b78ab34ee8d738dcdf29cafa397
     <import file="nbproject/build-impl.xml"/>
     <!--
 
