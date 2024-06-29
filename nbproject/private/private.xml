@@ -3,9 +3,17 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/web/profile.jsp</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/src/java/Service/Email.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/web/manager_home.jsp</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/web/WEB-INF/web.xml</file>
             <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/src/java/dbcontext/DBContext.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/src/java/controller/RegisterServlet.java</file>
             <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/src/java/controller/AccountController.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/web/includes/manager_header.jsp</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/web/register.jsp</file>
             <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/src/java/dbcontext/DBUtil.java</file>
+            <file>file:/C:/Users/ADMIN/Documents/NetBeansProjects/DangNhap/src/java/Service/CryptoUnil.java</file>
         </group>
     </open-files>
 </project-private>
