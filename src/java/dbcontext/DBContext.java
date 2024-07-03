@@ -14,7 +14,7 @@ public class DBContext {
         Connection connection = null;
         String driverName = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
         String serverName = "DESKTOP-TELB1LI";
-        String databaseName = "G2HotelTest1";
+        String databaseName = "TropicalHotel";
         String port = "1433";
         String user = "sa";
         String password = "123456";
