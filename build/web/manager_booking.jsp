@@ -59,9 +59,7 @@
         <c:if test="${sessionScope.userA.IDRole == 2}">
             <%@include file="/includes/manager_header.jsp" %>
         </c:if>
-        <c:if test="${sessionScope.userA.IDRole == 3}">
-            <%@include file="/includes/receptionist_header.jsp" %>
-        </c:if>
+        
         <!--================Breadcrumb Area =================-->
         <section class="breadcrumb_area">
             <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background=""></div>
