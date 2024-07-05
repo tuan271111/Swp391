@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/D:/ManagerBooking/web/manager_booking.jsp</file>
+            <file>file:/D:/ManagerBooking/src/java/controller/ShowBookingServlet.java</file>
+            <file>file:/D:/ManagerBooking/src/java/dao/ManagerDao.java</file>
+            <file>file:/D:/ManagerBooking/src/java/controller/UpdateBookingStatus.java</file>
+            <file>file:/D:/ManagerBooking/src/java/controller/ShowBookingRepceptionist.java</file>
+            <file>file:/D:/ManagerBooking/src/java/controller/ShowBookingCustomerServlet.java</file>
+            <file>file:/D:/ManagerBooking/src/java/dao/UserDao.java</file>
+            <file>file:/D:/ManagerBooking/src/java/controller/SearchBookingServlet.java</file>
+            <file>file:/D:/ManagerBooking/src/java/controller/DeleteServlet.java</file>
+        </group>
+    </open-files>
 </project-private>

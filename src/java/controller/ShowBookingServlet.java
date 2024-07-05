@@ -15,10 +15,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import model.BookingDetails;
 
-/**
- *
- * @author admin
- */
+
 public class ShowBookingServlet extends HttpServlet {
 
     /**
@@ -62,8 +59,6 @@ public class ShowBookingServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         ManagerDao managerDao = new ManagerDao();
         List<BookingDetails> bookingList = managerDao.getBookingDetails();
-//        PrintWriter out = response.getWriter();
-//        out.print("<h1>"+ bookingList.toString() + "</h1>");
 
         request.setAttribute("listB", bookingList);
         request.getRequestDispatcher("manager_booking.jsp").forward(request, response);
@@ -83,14 +78,9 @@ public class ShowBookingServlet extends HttpServlet {
         processRequest(request, response);
     }
 
-    /**
-     * Returns a short description of the servlet.
-     *
-     * @return a String containing servlet description
-     */
+    
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
-
+    }
 }

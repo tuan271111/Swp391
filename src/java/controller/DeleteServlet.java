@@ -12,10 +12,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author admin
- */
+
 public class DeleteServlet extends HttpServlet {
 
     /**
@@ -58,21 +55,14 @@ public class DeleteServlet extends HttpServlet {
             throws ServletException, IOException {
 
         String IDAccount = request.getParameter("IDAccount");
-        String IDDiscount = request.getParameter("IDDiscount");
-        String IDRoomType = request.getParameter("IDRoomType");
+        
                 
 
         ManagerDao manadao = new ManagerDao();
         if (IDAccount != null) {
             manadao.deleteAccount(IDAccount);
             response.sendRedirect("showAccount");
-        } else if (IDDiscount != null) {
-            manadao.deleteDiscount(IDDiscount);
-            response.sendRedirect("showDiscount");
-        } else if(IDRoomType != null){
-            manadao.deleteRoomType(IDRoomType);
-            response.sendRedirect("showRoomType");
-        }
+        } 
     }
 
     /**
@@ -97,6 +87,6 @@ public class DeleteServlet extends HttpServlet {
     @Override
     public String getServletInfo() {
         return "Short description";
-    }// </editor-fold>
+    }
 
 }
