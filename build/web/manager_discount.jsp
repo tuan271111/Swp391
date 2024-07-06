@@ -97,6 +97,62 @@
                     <td><a href="delete?IDDiscount=${l.getIDDiscount()}">Delete</a></td>
                 </tr>
             </c:forEach>
+                
+               <!--================FORM ADD NEW DISCOUNT =================-->
+
+        <h1 style="text-align: center;">ADD NEW DISCOUNT</h1>
+
+        <form action="addNewDiscount" class="col-md-9 m-auto" method="get" role="form">
+            <div class="row">
+                <div class="form-group col-md-6 mb-3">
+                    <label for="inputname">ID</label><br>
+                    <label for="inputname">Auto Generate</label>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="inputname">Discount Name</label>
+                    <input type="text" class="form-control mt-1" id="DiscountName" name="DiscountName" placeholder="Discount Name" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6 mb-3">
+                    <label for="inputname">Discount Value</label>
+                    <input type="text" class="form-control mt-1" id="DiscountValue" name="DiscountValue" placeholder="DiscountValue" required>
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                    <label for="inputname">Note</label>
+                    <input type="text" class="form-control mt-1" id="Note" name="Note" placeholder="Note" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker11'>
+                            <input type='text' class="form-control" name="StartDay" placeholder="Start Day"/>
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>                    
+                <div class="form-group col-md-6 mb-3">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker1' >
+                            <input type='text' class="form-control" name="EndDay" placeholder="End Day"/>
+                            <span class="input-group-addon">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-end mt-2">
+                    <button type="submit" class="btn btn-success btn-lg px-3">Add New Discount</button>
+                </div>
+            </div><br>
+        </form>
+        <!--================FORM ADD NEW DISCOUNT =================-->
 
         </table>
         <script src="js/jquery-3.2.1.min.js"></script>
