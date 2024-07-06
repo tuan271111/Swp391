@@ -30,43 +30,54 @@ public class ManagerDao {
     PreparedStatement ps = null;
     ResultSet rs = null;
 
-    //ACCOUNT
-    // day thong tin all account ra bang quan ly account (View)
-    public List<User> getAccounts() {
-        List<User> list = new ArrayList<>();
-        String query = "select * from Account";
+   //MANAGER DISCOUNT
+    public List<Discount> getDiscount() {
+        List<Discount> list = new ArrayList<>();
+        String query = "select * from Discount";
         try {
             conn = DBContext.getConnection();//mo ket noi
             ps = conn.prepareStatement(query);
             rs = ps.executeQuery();
             while (rs.next()) {
-                list.add(new User(rs.getInt(1),
+                list.add(new Discount(rs.getInt(1),
                         rs.getString(2),
-                        rs.getString(3),
+                        rs.getDouble(3),
                         rs.getString(4),
                         rs.getString(5),
-                        rs.getString(6),
-                        rs.getString(7),
-                        rs.getString(8),
-                        rs.getInt(9)));
+                        rs.getString(6)));
             }
         } catch (Exception e) {
         }
         return list;
     }
 
-    // xoa account theo ID (Delete)
-    public void deleteAccount(String IDAccount) {
-        String query = "delete from Account where IDAccount = ?";
+    public void addDiscount(String DiscountName, String DiscountValue, String StartDay, String EndDay, String Note) {
+        String query = "insert into Discount(DiscountName,DiscountValue,StartDay,EndDay,Note) values (?,?,?,?,?)";
         try {
             conn = DBContext.getConnection();//mo ket noi
             ps = conn.prepareStatement(query);
-            ps.setString(1, IDAccount);
+            ps.setString(1, DiscountName);
+            ps.setString(2, DiscountValue);
+            ps.setString(3, StartDay);
+            ps.setString(4, EndDay);
+            ps.setString(5, Note);
+
             ps.executeUpdate();
         } catch (Exception e) {
         }
     }
-
+    
+    // xoa Discount theo ID (Delete)
+    public void deleteDiscount(String IDDiscount) {
+        String query = "delete from Discount where IDDiscount = ?";
+        try {
+            conn = DBContext.getConnection();//mo ket noi
+            ps = conn.prepareStatement(query);
+            ps.setString(1, IDDiscount);
+            ps.executeUpdate();
+        } catch (Exception e) {
+        }
+    }
     //MANAGER BOOKING
     // day thong tin all Booking ra bang quan ly booking (View)
     public List<Booking> getBooking() {

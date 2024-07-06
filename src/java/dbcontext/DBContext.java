@@ -55,12 +55,12 @@ public class DBContext {
 //        List<CheckRoomValid> l = ud.checkRoomValid("2023-06-14", "2023-06-20");
 //        System.out.println("sfs" + l.toString());
 
-        ManagerDao m = new ManagerDao();
-        List<User> list = new ArrayList<>();
-        list = m.getAccounts();
-        for (User user : list) {
-             System.out.println(user.toString());;
-        }
+//        ManagerDao m = new ManagerDao();
+//        List<User> list = new ArrayList<>();
+//        list = m.getAccounts();
+//        for (User user : list) {
+//             System.out.println(user.toString());;
+//        }
     }
     
 

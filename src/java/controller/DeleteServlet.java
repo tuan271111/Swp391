@@ -55,13 +55,13 @@ public class DeleteServlet extends HttpServlet {
             throws ServletException, IOException {
 
         String IDAccount = request.getParameter("IDAccount");
-        
+        String IDDiscount = request.getParameter("IDDiscount");
                 
 
         ManagerDao manadao = new ManagerDao();
-        if (IDAccount != null) {
-            manadao.deleteAccount(IDAccount);
-            response.sendRedirect("showAccount");
+        if (IDDiscount != null) {
+            manadao.deleteDiscount(IDDiscount);
+            response.sendRedirect("showDiscount");
         } 
     }
 
