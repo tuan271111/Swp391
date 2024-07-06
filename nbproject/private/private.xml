@@ -6,11 +6,10 @@
             <file>file:/D:/ManagerBooking/web/manager_booking.jsp</file>
             <file>file:/D:/ManagerBooking/src/java/controller/ShowDiscount.java</file>
             <file>file:/D:/ManagerBooking/src/java/dao/ManagerDao.java</file>
-            <file>file:/D:/ManagerBooking/web/include/manager_header.jsp</file>
-            <file>file:/D:/ManagerBooking/web/manager_discount.jsp</file>
-            <file>file:/D:/ManagerBooking/src/java/dbcontext/DBContext.java</file>
+            <file>file:/D:/ManagerBooking/web/manager_account.jsp</file>
             <file>file:/D:/ManagerBooking/src/java/controller/AddDiscount.java</file>
             <file>file:/D:/ManagerBooking/src/java/controller/DeleteServlet.java</file>
+            <file>file:/D:/ManagerBooking/src/java/controller/SearchBookingServlet.java</file>
         </group>
     </open-files>
 </project-private>

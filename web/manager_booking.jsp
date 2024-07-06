@@ -137,10 +137,7 @@
             <tbody>
                 <c:forEach items="${requestScope.listB}" var="b">
                     <tr>
-                <form action="updateBookingStatus" method="get">
-                    <input type="hidden" class="form-control mt-1" id="IDBooking" name="IDBooking" value="${b.getIDBooking()}">
-                    <input type="hidden" class="form-control mt-1" id="IDAccount" name="IDAccount" value="${b.getIDAccount()}">
-                    <input type="hidden" class="form-control mt-1" id="Status" name="Status" value="Susscess">
+                
                     <td>${b.getIDBooking()}</td>
                     <td>${b.getIDAccount()}</td>
                     <td>${b.getIDRoomType()}</td>
