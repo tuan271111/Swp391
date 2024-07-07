@@ -54,6 +54,18 @@ public class ManagerDao {
         }
         return list;
     }
+    
+     public void deleteAccount(String IDAccount) {
+        String query = "delete from Account where IDAccount = ?";
+        try {
+            conn = DBContext.getConnection();//mo ket noi
+            ps = conn.prepareStatement(query);
+            ps.setString(1, IDAccount);
+            ps.executeUpdate();
+        } catch (Exception e) {
+        }
+    }
+
 
 
    //MANAGER DISCOUNT
