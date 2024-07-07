@@ -29,6 +29,32 @@ public class ManagerDao {
     Connection conn = null;
     PreparedStatement ps = null;
     ResultSet rs = null;
+    
+    //Manager account
+    // day thong tin all account ra bang quan ly account (View)
+    public List<User> getAccounts() {
+        List<User> list = new ArrayList<>();
+        String query = "select * from Account";
+        try {
+            conn = DBContext.getConnection();//mo ket noi
+            ps = conn.prepareStatement(query);
+            rs = ps.executeQuery();
+            while (rs.next()) {
+                list.add(new User(rs.getInt(1),
+                        rs.getString(2),
+                        rs.getString(3),
+                        rs.getString(4),
+                        rs.getString(5),
+                        rs.getString(6),
+                        rs.getString(7),
+                        rs.getString(8),
+                        rs.getInt(9)));
+            }
+        } catch (Exception e) {
+        }
+        return list;
+    }
+
 
    //MANAGER DISCOUNT
     public List<Discount> getDiscount() {
