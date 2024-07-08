@@ -105,17 +105,6 @@ public class ManagerDao {
         }
     }
     
-    // xoa Discount theo ID (Delete)
-    public void deleteDiscount(String IDDiscount) {
-        String query = "delete from Discount where IDDiscount = ?";
-        try {
-            conn = DBContext.getConnection();//mo ket noi
-            ps = conn.prepareStatement(query);
-            ps.setString(1, IDDiscount);
-            ps.executeUpdate();
-        } catch (Exception e) {
-        }
-    }
     //MANAGER BOOKING
     // day thong tin all Booking ra bang quan ly booking (View)
     public List<Booking> getBooking() {
@@ -192,38 +181,7 @@ public class ManagerDao {
         return dateToCheck.isBefore(today);
     }
 
-    public List<BookingDetails> getBookingDetailsByReceptionist() {
-        List<BookingDetails> list = new ArrayList<>();
-        String query = "SELECT bd.*\n"
-                + "FROM BookingDetails bd\n"
-                + "JOIN Account a ON bd.IDAccount = a.IDAccount\n"
-                + "WHERE a.IDRole = 2 or a.IDRole =3;";
-        try {
-            conn = DBContext.getConnection();//mo ket noi
-            ps = conn.prepareStatement(query);
-            rs = ps.executeQuery();
-            while (rs.next()) {
-                list.add(new BookingDetails(rs.getInt(1),
-                        rs.getInt(2),
-                        rs.getInt(3),
-                        rs.getInt(4),
-                        rs.getString(5),
-                        rs.getString(6),
-                        rs.getString(7),
-                        rs.getString(8),
-                        rs.getInt(9),
-                        rs.getInt(10),
-                        rs.getString(11),
-                        rs.getString(12),
-                        rs.getInt(13),
-                        rs.getDouble(14),
-                        rs.getString(15),
-                        rs.getString(16)));
-            }
-        } catch (Exception e) {
-        }
-        return list;
-    }
+   
     public List<BookingDetails> getBookingDetailsByCustomer() {
         List<BookingDetails> list = new ArrayList<>();
         String query = "SELECT bd.*\n"
